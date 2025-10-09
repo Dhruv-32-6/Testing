@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booleans Exercise</title>
+</head>
+<body>
+
+    <!-- Flip Coin -->
+
+    <button onclick="
+        const flip = Math.random();
+
+        let result = '';
+
+        if (flip >= 0 && flip < 0.5) {
+            result = 'Heads';
+        }
+        else if (flip >= 0.5 && flip < 1) {
+            result = 'Tails';
+        }
+
+        let match = '';
+
+        if (result === 'Heads') {
+            match = 'This is a match. You Won.';
+        }
+        else if (result === 'Tails') {
+            match = 'This is not a match. You Lose.';
+        }
+
+        alert (`You Choose Heads and Coin Fliped to ${result}. ${match}`);
+    ">Heads</button>
+
+    <button onclick="
+
+        const flip1 = Math.random();
+
+        let result1 = '';
+
+        if (flip1 >= 0 && flip1 < 0.5) {
+            result1 = 'Heads';
+        }
+        else if (flip1 >= 0.5 && flip1 < 1) {
+            result1 = 'Tails';
+        }
+
+        let match1 = '';
+
+        result1 === 'Tails' ? match1 = 'This is a match. You Won': match1 = 'This is not a match. You Lose'
+
+        alert (`You choose Tails and the coin Fliped ${result1}. ${match1}`);
+
+    ">Tails</button>
+    <!-- Coin Flipped -->
+
+    <script>
+        
+        let hours = 21;
+
+        const name = 'DhruvRitika'
+         
+        if (hours >= 6 && hours <=12) {
+            console.log(`Good Morning! ${name}`);
+        }
+        else if (hours >= 13 && hours <= 17) {
+            console.log(`Good Afternoon! ${name}`);
+        }
+        else{
+            console.log(`Good Night! ${name}`);
+        }
+
+        let age = 70;
+
+        const isHoliday = false;
+
+        if ((age <= 6 || age >= 65) && isHoliday) {
+            console.log('Discount!');
+        }
+        else{
+            console.log('No Discount!');
+        }
+
+    </script>
+</body>
+</html>
